@@ -1,0 +1,56 @@
+﻿--- STARTING BACKEND LOGIC TEST ---
+RESPONSE_CODE: 200
+RESPONSE_DATA: {
+  "resolution": {
+    "summary": "Official authority finalized the dossier as Resolved with Fine.",
+    "date": "2026-03-05T10:37:02.031Z",
+    "officerName": "neel",
+    "finalMessage": "System integrity maintained."
+  },
+  "_id": "69a943a8f6f5741987eb8799",
+  "threatTitle": "hhh",
+  "threatType": "Data Breach",
+  "description": "njkghu",
+  "urlOrPhone": "7845963214",
+  "evidenceURL": "/uploads/1772700584068-Screenshot (357).png",
+  "severity": "Critical",
+  "status": "Resolved with Fine",
+  "fineAmount": 5000,
+  "paymentStatus": "Pending",
+  "ipAddress": "::1",
+  "latitude": 21.239895728964473,
+  "longitude": 72.87223988852048,
+  "address": "Amroli, Gujarat, India, 394105",
+  "zone": "North-East",
+  "createdBy": "69982046d58220d2aedd7dc6",
+  "investigationNotes": [],
+  "timeline": [
+    {
+      "title": "Report Submitted",
+      "description": "Your report has been successfully transmitted to the CyberGuard network.",
+      "role": "citizen",
+      "timestamp": "2026-03-05T08:49:44.079Z",
+      "_id": "69a943a8f6f5741987eb879a"
+    },
+    {
+      "title": "Auto-Assigned: Mission Protocol",
+      "description": "Dossier detected in North-East Zone. Load-balanced assignment to Officer neel.",
+      "role": "admin",
+      "timestamp": "2026-03-05T08:49:44.096Z",
+      "_id": "69a943a8f6f5741987eb879d"
+    },
+    {
+      "title": "Status: Resolved with Fine",
+      "description": "Incident status transitioned to Resolved with Fine",
+      "role": "officer",
+      "timestamp": "2026-03-05T10:37:02.022Z",
+      "_id": "69a95cced3528a7a0575e566"
+    }
+  ],
+  "evidence": [],
+  "assignedTo": "69a470574d40903a093d6c68",
+  "createdAt": "2026-03-05T08:49:44.102Z",
+  "updatedAt": "2026-03-05T10:37:02.048Z",
+  "__v": 1
+}
+--- TEST FINISHED ---

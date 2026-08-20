@@ -1,0 +1,16 @@
+﻿USER_DATA_START
+{
+  "_id": "69a470574d40903a093d6c68",
+  "name": "neel",
+  "email": "neel@cyber.com",
+  "password": "$2b$10$INXv7kIpRPq.I4APOXT56O96Gr2Trjib828tTOgvbwlszv39xDSG6",
+  "role": "officer",
+  "status": "active",
+  "zone": "North-East",
+  "isActive": true,
+  "assignedReportsCount": 1,
+  "createdAt": "2026-03-01T16:59:03.942Z",
+  "updatedAt": "2026-03-05T08:49:44.091Z",
+  "__v": 0
+}
+USER_DATA_END

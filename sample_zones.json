@@ -1,0 +1,29 @@
+[
+    {
+        "name": "North Cyber Zone (Delhi)",
+        "polygon": [
+            { "lat": 28.4, "lng": 76.8 },
+            { "lat": 28.9, "lng": 76.8 },
+            { "lat": 28.9, "lng": 77.5 },
+            { "lat": 28.4, "lng": 77.5 }
+        ]
+    },
+    {
+        "name": "South Cyber Zone (Bengaluru)",
+        "polygon": [
+            { "lat": 12.8, "lng": 77.4 },
+            { "lat": 13.2, "lng": 77.4 },
+            { "lat": 13.2, "lng": 77.8 },
+            { "lat": 12.8, "lng": 77.8 }
+        ]
+    },
+    {
+        "name": "West Cyber Zone (Mumbai)",
+        "polygon": [
+            { "lat": 18.9, "lng": 72.7 },
+            { "lat": 19.3, "lng": 72.7 },
+            { "lat": 19.3, "lng": 73.1 },
+            { "lat": 18.9, "lng": 73.1 }
+        ]
+    }
+]

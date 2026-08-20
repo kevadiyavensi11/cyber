@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Mode */
+  --light-bg: #ffffff;
+  --light-card: #ffffff;
+  --light-primary-text: #0f172a;
+  --light-secondary-text: #334155;
+  --light-muted-text: #64748b;
+  --light-border: #e2e8f0;
+
+  /* Dark Mode */
+  --dark-bg: #0f172a;
+  --dark-card: #1e293b;
+  --dark-primary-text: #f8fafc;
+  --dark-secondary-text: #cbd5e1;
+  --dark-muted-text: #94a3b8;
+  --dark-border: #334155;
+}
+
+@layer base {
+  .font-app {
+    font-family: 'Inter', sans-serif !important;
+  }
+  body {
+    @apply m-0 font-sans text-base font-normal antialiased transition-colors duration-300 selection:bg-blue-500/30 overflow-x-hidden font-app;
+  }
+  h1 {
+    @apply text-4xl font-bold md:text-5xl tracking-tight;
+  }
+  h2 {
+    @apply text-3xl font-bold tracking-tight;
+  }
+  h3 {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+  h4, h5, h6 {
+    @apply text-xl font-semibold tracking-tight;
+  }
+  small {
+    @apply text-sm font-normal;
+  }
+}
+
+/* Global Theme Support */
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-primary-text);
+}
+
+body.light {
+  background-color: var(--light-bg);
+  color: var(--light-primary-text);
+}
+
+/* Sidebar Styling */
+body.dark .sidebar,
+body.dark aside {
+  background-color: var(--dark-card);
+  border-color: var(--dark-border);
+}
+
+body.light .sidebar a:not(.text-white),
+body.light aside a:not(.text-white) {
+  color: var(--light-secondary-text);
+}
+
+body.dark .sidebar a:not(.text-white),
+body.dark aside a:not(.text-white) {
+  color: var(--dark-secondary-text);
+}
+
+/* Card Styling - Standardizing for both modes */
+.card, [class*="card"] {
+  @apply transition-all duration-300;
+}
+
+body.light .card, body.light [class*="card"] {
+  background-color: var(--light-card);
+  border-color: var(--light-border);
+}
+
+body.dark .card, body.dark [class*="card"] {
+  background-color: var(--dark-card);
+  border-color: var(--dark-border);
+}
+
+body.dark .text-gray-500,
+body.dark .text-gray-400 {
+  color: var(--dark-muted-text);
+}
+
+/* Table Styling */
+body.light table {
+  color: var(--light-primary-text);
+}
+
+body.light th {
+  color: var(--light-secondary-text) !important;
+  border-bottom: 1px solid var(--light-border) !important;
+}
+
+body.light td {
+  color: var(--light-primary-text) !important;
+}
+
+body.dark table {
+  color: var(--dark-primary-text);
+}
+
+body.dark th {
+  background-color: var(--dark-card) !important;
+  color: var(--dark-secondary-text) !important;
+  border-bottom: 1px solid var(--dark-border) !important;
+}
+
+body.dark td {
+  color: var(--dark-primary-text) !important;
+  border-color: var(--dark-border) !important;
+}
+
+/* Status Badges */
+.status-badge {
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Input Fields */
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background-color: var(--dark-card) !important;
+  color: var(--dark-primary-text) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+
+body.dark input::placeholder {
+  color: var(--dark-muted-text) !important;
+}
+
+/* Header/Navbar Styling */
+body.dark header,
+body.dark .bg-white\/80 {
+  background-color: rgba(30, 41, 59, 0.8) !important;
+  border-color: var(--dark-border) !important;
+}
+
+body.dark .bg-gray-50 {
+  background-color: var(--dark-border) !important;
+}
+
+
+@layer components {
+  .cyber-card {
+    @apply bg-slate-900/40 backdrop-blur-xl border border-white/5 rounded-[2.5rem] shadow-2xl transition-all duration-500 hover:border-blue-500/20;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500;
+  }
+
+  .btn-cyber {
+    @apply relative px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-[1.5rem] font-black uppercase tracking-widest text-[10px] transition-all duration-500 active:scale-95 shadow-cyber hover:shadow-cyber-hover;
+  }
+
+  .btn-cyber-outline {
+    @apply relative px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-[1.5rem] font-black uppercase tracking-widest text-[10px] transition-all duration-500 active:scale-95;
+  }
+
+  .cyber-btn-primary {
+    @apply btn-cyber px-10 py-5 text-sm;
+  }
+
+  .cyber-btn-secondary {
+    @apply btn-cyber-outline px-10 py-5 text-sm;
+  }
+}
+
+/* Custom Scrollbar Modern */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full hover:bg-blue-500/50 transition-colors;
+}
+
+/* Scanning Animation */
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+.animate-scan {
+  animation: scan 3s linear infinite;
+}
+
+/* Smooth Background Pulse */
+@keyframes pulse-slow {
+
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.15;
+    transform: scale(1.1);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+/* HUD Pulse */
+@keyframes hud-pulse {
+
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-hud-pulse {
+  animation: hud-pulse 2s ease-in-out infinite;
+}

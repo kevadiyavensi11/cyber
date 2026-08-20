@@ -1,0 +1,40 @@
+﻿{
+  "_id": "69a943a8f6f5741987eb8799",
+  "threatTitle": "hhh",
+  "threatType": "Data Breach",
+  "description": "njkghu",
+  "urlOrPhone": "7845963214",
+  "evidenceURL": "/uploads/1772700584068-Screenshot (357).png",
+  "severity": "Critical",
+  "status": "Assigned",
+  "fineAmount": 0,
+  "paymentStatus": "Not Required",
+  "ipAddress": "::1",
+  "latitude": 21.239895728964473,
+  "longitude": 72.87223988852048,
+  "address": "Amroli, Gujarat, India, 394105",
+  "zone": "North-East",
+  "createdBy": "69982046d58220d2aedd7dc6",
+  "investigationNotes": [],
+  "timeline": [
+    {
+      "title": "Report Submitted",
+      "description": "Your report has been successfully transmitted to the CyberGuard network.",
+      "role": "citizen",
+      "timestamp": "2026-03-05T08:49:44.079Z",
+      "_id": "69a943a8f6f5741987eb879a"
+    },
+    {
+      "title": "Auto-Assigned: Mission Protocol",
+      "description": "Dossier detected in North-East Zone. Load-balanced assignment to Officer neel.",
+      "role": "admin",
+      "timestamp": "2026-03-05T08:49:44.096Z",
+      "_id": "69a943a8f6f5741987eb879d"
+    }
+  ],
+  "evidence": [],
+  "assignedTo": "69a470574d40903a093d6c68",
+  "createdAt": "2026-03-05T08:49:44.102Z",
+  "updatedAt": "2026-03-05T08:49:44.102Z",
+  "__v": 0
+}
